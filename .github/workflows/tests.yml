@@ -24,7 +24,7 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Run unit, integration, and Playwright end-to-end tests
-        run: pytest -v
+        run: python -m pytest -v
 
       - name: Save browser screenshot as workflow artifact
         if: always()

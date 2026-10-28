@@ -1,0 +1,18 @@
+* {box-sizing: border-box}
+body {margin:0; min-height:100vh; font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif; background:linear-gradient(135deg,#ecf2ff,#f8fafc); color:#172033; display:grid;place-items:center;padding:22px}
+.calculator {width:min(100%,570px); background:white;padding:36px;border-radius:20px;box-shadow:0 18px 50px #17203317}
+.eyebrow {font-size:12px;letter-spacing:.2em;color:#3959b4;font-weight:800}
+h1 {margin:11px 0 8px;font-size:2rem}
+.subtitle {color:#526078;margin-bottom:28px;line-height:1.5}
+label {display:block;font-size:14px;font-weight:650;margin:0 0 8px}
+input,select {width:100%;padding:13px;border:1px solid #ced8eb;border-radius:10px;font:inherit;background:#fff;color:#172033}
+input:focus,select:focus {outline:2px solid #4667c6;outline-offset:1px}
+.number-fields {display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+button {width:100%;margin-top:24px;border:0;border-radius:10px;background:#3057c7;color:#fff;font-size:17px;font-weight:700;padding:15px;cursor:pointer}
+button:hover {background:#2145af}
+.result {margin-top:24px;border-radius:12px;background:#eef4ff;padding:20px;min-height:110px}
+.result-label {display:block;color:#526078;font-size:13px;font-weight:700;margin-bottom:7px;text-transform:uppercase}
+#result-value {font-size:30px}
+.error {color:#a11c37;margin:8px 0 0}
+footer {text-align:center;color:#67768e;font-size:12px;margin-top:25px}
+@media(max-width:450px){.calculator{padding:23px}.number-fields{grid-template-columns:1fr}}

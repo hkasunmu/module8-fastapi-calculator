@@ -1,0 +1,2 @@
+After pytest finishes, the screenshot of the browser app will be saved here as application-running.png.
+GitHub Actions success screenshot must be taken from YOUR actual green GitHub Actions run after pushing. Do not use a fake screenshot.

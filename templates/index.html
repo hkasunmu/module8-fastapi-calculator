@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 8 | FastAPI Calculator</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <div class="eyebrow">IS601 · MODULE 8</div>
+    <h1>FastAPI Calculator</h1>
+    <p class="subtitle">Choose an operation, enter two numbers, and calculate.</p>
+    <form id="calculator-form">
+      <label for="operation">Operation</label>
+      <select id="operation" name="operation">
+        <option value="add">Add (+)</option>
+        <option value="subtract">Subtract (−)</option>
+        <option value="multiply">Multiply (×)</option>
+        <option value="divide">Divide (÷)</option>
+        <option value="power">Power (a^b)</option>
+        <option value="root">Root (b-th root of a)</option>
+      </select>
+      <div class="number-fields">
+        <div>
+          <label for="a">First number (a)</label>
+          <input type="number" id="a" name="a" value="12" step="any" required>
+        </div>
+        <div>
+          <label for="b">Second number (b)</label>
+          <input type="number" id="b" name="b" value="3" step="any" required>
+        </div>
+      </div>
+      <button type="submit" id="calculate-button">Calculate</button>
+    </form>
+    <section id="result-box" role="status" aria-live="polite" class="result">
+      <span class="result-label">Result</span>
+      <strong id="result-value">—</strong>
+      <p id="error-message" class="error"></p>
+    </section>
+    <footer>Python · FastAPI · Pytest · Playwright · GitHub Actions</footer>
+  </main>
+</body>
+</html>
